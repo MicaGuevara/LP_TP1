@@ -14,8 +14,10 @@ import model.User;
  * @author HP Pavilion
  */
 public class AutheticationService {
+    
     public long signin(String username, String password){
-        long iduser=1;
+        
+        long iduser= -1;
         try{
             ObjectMapper objectMapper= new ObjectMapper();
             File file= new File("src/main/java/data/user.json");

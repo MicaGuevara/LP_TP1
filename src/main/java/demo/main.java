@@ -5,6 +5,7 @@
 package demo;
 
 import business.security.AutheticationService;
+import gui.login;
 
 /**
  *
@@ -14,6 +15,8 @@ public class main {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        
+        new login().setVisible(true);
         
         AutheticationService AS= new AutheticationService();
         
